@@ -55,3 +55,127 @@ body {
     font-size: 0.9rem;
   }
   
+  /* Estilos para la página de compra exitosa */
+.compra-exitosa {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.compra-exitosa h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+}
+
+.compra-exitosa p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.botones-compra a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botones-compra a:hover {
+  background-color: #0d47a1;
+}
+
+.cuerpo {
+  background: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.confirm-container {
+  background: white;
+  padding: 40px;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.confirm-container h1 {
+  color: #1e4d6b;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.confirm-container p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.confirm-container button {
+  background-color: #1e4d6b;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-container button:hover {
+  background-color: #14506d;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.integrantes {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.grid-integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-integrante {
+  background: #fff;
+  border: 2px solid #90caf9;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 160px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card-integrante:hover {
+  transform: scale(1.05);
+}
+
+.card-integrante img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-integrante p {
+  font-weight: bold;
+  margin: 0;
+}

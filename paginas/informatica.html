@@ -29,25 +29,143 @@
       </div>
     </div>
   </nav>
-
   <main class="container mt-4">
     <section>
-      <h2>Acceso interno a incidencias</h2>
-      <p>Los miembros del personal pueden reportar incidencias técnicas accediendo a nuestra plataforma:</p>
-      <a href="#" class="btn btn-warning">Ir a plataforma de ticketing</a>
-    </section>
+      <h2>Introducción</h2>
+      <p>La transformación digital en los centros educativos exige una gestión eficaz de los recursos tecnológicos. La implementación de un sistema de gestión informática estructurado permite no solo resolver incidencias con mayor agilidad, sino también garantizar el correcto mantenimiento de la infraestructura tecnológica, optimizar recursos, y mejorar la experiencia educativa de docentes y estudiantes.</p>
+  </section>
 
-    <section>
-      <h2>Guía de uso del sistema</h2>
-      <p>Consulta nuestra guía paso a paso para el uso correcto del sistema de incidencias.</p>
-      <a href="#" class="btn btn-outline-primary">Ver guía en PDF</a>
-    </section>
+</section>
 
-    <section>
-      <h2>Mapa de equipamiento digital</h2>
-      <p>Visualiza los dispositivos digitales disponibles en cada aula y espacio del centro.</p>
-      <a href="#" class="btn btn-outline-secondary">Ver mapa</a>
-    </section>
+<section>
+    <h2>Acciones a implementar</h2>
+
+    <h3>1. Crear acceso interno para el personal a la plataforma de incidencias</h3>
+    <p>Se desarrollará un sistema centralizado para la gestión de incidencias técnicas accesible desde la red interna del centro. Este acceso permitirá al personal educativo y administrativo:</p>
+    <ul>
+        <li>Registrar fallos o incidencias relacionadas con dispositivos, software o conectividad.</li>
+        <li>Hacer seguimiento del estado de cada solicitud.</li>
+        <li>Recibir notificaciones sobre resoluciones y actualizaciones.</li>
+    </ul>
+    <p>Este sistema garantizará una comunicación fluida entre el usuario final y el equipo técnico, reduciendo los tiempos de respuesta y mejorando la calidad del servicio técnico interno.</p>
+
+    <h3>2. Publicar una guía de uso del sistema de ticketing</h3>
+    <p>Para garantizar una correcta utilización de la plataforma, se elaborará una guía completa que incluirá:</p>
+    <ul>
+        <li>Instrucciones detalladas con capturas de pantalla.</li>
+        <li>Protocolos de actuación según el tipo de incidencia.</li>
+        <li>Recomendaciones para evitar errores comunes.</li>
+        <li>Información sobre tiempos de respuesta estimados y niveles de prioridad.</li>
+    </ul>
+    <p>Además, se organizarán pequeñas sesiones formativas para familiarizar al personal con el sistema, asegurando su correcto uso desde el primer día.</p>
+
+    <h3>3. Publicación de un mapa de equipamientos digitales del centro</h3>
+    <p>Se elaborará un mapa digital interactivo donde se visualizará la ubicación, tipo y estado de cada equipamiento tecnológico del centro, como:</p>
+    <ul>
+        <li>Ordenadores de aula y administrativos.</li>
+        <li>Proyectores, pantallas interactivas y pizarras digitales.</li>
+        <li>Equipos de impresión y escaneado.</li>
+        <li>Puntos de acceso a red y cobertura Wi-Fi.</li>
+    </ul>
+    <p>Este mapa facilitará la planificación del mantenimiento preventivo, la identificación de incidencias recurrentes por zona y el análisis de necesidades futuras en función del uso y antigüedad del equipo.</p>
+</section>
+
+<section>
+    <h2>Recursos necesarios</h2>
+
+    <h3>1. Plataforma de ticketing</h3>
+    <p>Se optará por una plataforma de código abierto como <strong>GLPI</strong> o <strong>Zammad</strong>, por sus prestaciones avanzadas y posibilidades de personalización. Estas herramientas permiten:</p>
+    <ul>
+        <li>Gestión de tickets por categorías y prioridades.</li>
+        <li>Asignación automática a técnicos responsables.</li>
+        <li>Integración con correo electrónico institucional.</li>
+        <li>Generación de informes estadísticos.</li>
+    </ul>
+    <p>Se estudiará también su posible integración con directorios LDAP para facilitar el acceso autenticado del personal.</p>
+
+    <h3>2. Responsable TIC</h3>
+    <p>El Responsable TIC del centro será el encargado de:</p>
+    <ul>
+        <li>Administrar el sistema de ticketing.</li>
+        <li>Coordinar el mantenimiento correctivo y preventivo.</li>
+        <li>Asesorar al profesorado sobre uso adecuado de la infraestructura.</li>
+    </ul>
+    <p>Este perfil debe contar con conocimientos técnicos, habilidades comunicativas y capacidad para documentar procedimientos técnicos de forma clara.</p>
+
+    <h3>3. Documentación explicativa</h3>
+    <p>Además de la guía de uso del sistema de tickets, se generará documentación técnica interna como:</p>
+    <ul>
+        <li>Protocolos de mantenimiento de hardware y software.</li>
+        <li>Plan de contingencia ante fallos masivos.</li>
+        <li>Manuales rápidos para resolución de incidencias comunes.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Temporalización</h2>
+
+    <h3>Fase 1: Preparación (Duración: 2 semanas)</h3>
+    <ul>
+        <li>Análisis del estado actual de la infraestructura.</li>
+        <li>Selección y configuración inicial de la plataforma.</li>
+        <li>Recolección de datos para el mapa de equipamientos.</li>
+        <li>Elaboración de documentación preliminar.</li>
+    </ul>
+
+    <h3>Fase 2: Implementación (Duración: 1 mes)</h3>
+    <ul>
+        <li>Instalación definitiva del sistema de ticketing.</li>
+        <li>Publicación del mapa digital en la intranet del centro.</li>
+        <li>Formación al personal sobre el uso del sistema.</li>
+        <li>Seguimiento y mejora continua del sistema en base a la experiencia inicial.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Responsables</h2>
+
+    <h3>Coordinador TIC</h3>
+    <p>Será el responsable del proyecto. Deberá supervisar cada fase del proceso, coordinar con los responsables de cada área, y asegurar que los objetivos de calidad, tiempos y formación se cumplen adecuadamente.</p>
+
+    <h3>Equipo técnico externo (si fuera necesario)</h3>
+    <p>En función de la complejidad del despliegue o la necesidad de integraciones específicas, se podrá recurrir a un equipo externo con experiencia en implementación de plataformas de soporte técnico y gestión informática en entornos educativos.</p>
+</section>
+
+<section>
+    <h2>Beneficios esperados</h2>
+    <ul>
+        <li>Reducción de tiempos de respuesta ante incidencias tecnológicas.</li>
+        <li>Mayor visibilidad y control sobre el estado del equipamiento TIC del centro.</li>
+        <li>Fomento del uso responsable y ordenado de los recursos digitales.</li>
+        <li>Facilitación de auditorías y planificación presupuestaria para renovación tecnológica.</li>
+        <li>Formación continua y mejora del entorno digital educativo.</li>
+    </ul>
+</section>
+<section>
+  <h2>Formulario de contacto TIC</h2>
+  <p>Utiliza este formulario para notificar una incidencia técnica, hacer sugerencias o solicitar soporte del equipo TIC del centro.</p>
+  
+  <form id="formularioTIC" action="./tiquetIT.html">
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px;"><br><br>
+
+    <label for="email">Correo electrónico institucional:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;"><br><br>
+
+    <label for="tipo">Tipo de solicitud:</label><br>
+    <select id="tipo" name="tipo" required style="width: 100%; padding: 8px;">
+        <option value="incidencia">Incidencia técnica</option>
+        <option value="soporte">Solicitud de soporte</option>
+        <option value="sugerencia">Sugerencia de mejora</option>
+        <option value="peticion">Petición de equipamiento</option>
+    </select><br><br>
+
+    <label for="mensaje">Descripción detallada:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="6" required style="width: 100%; padding: 8px;"></textarea><br><br>
+
+    <button type="submit" style="background-color: #1e4d6b; color: white; padding: 10px 20px; border: none; border-radius: 6px;">Enviar</button>
+  </form>
+</section>
   </main>
 
   <footer class="text-center mt-5">
