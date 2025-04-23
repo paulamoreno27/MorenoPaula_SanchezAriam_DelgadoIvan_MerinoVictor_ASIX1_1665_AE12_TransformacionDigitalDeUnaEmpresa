@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Contacto</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="icon" href="../img/contacto.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/estilos.css">
   <script src="../js/validacion.js" defer></script>
 </head>
@@ -21,13 +22,12 @@
           <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
           <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
           <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contacto.php">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container mt-4">
+  <main class="container mt-4">    
     <section>
       <h2>Formulario de contacto</h2>
       <form id="contactForm" method="POST" action="../procesos/validar-contacto.php" onsubmit="return validarFormulario()">
@@ -49,26 +49,11 @@
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </section>
-
-    <section class="integrantes mt-5">
-      <h2 class="text-center">Integrantes</h2>
-      <div class="grid-integrantes">
-        <div class="card-integrante">
-          <img src="../img/ariam.png" alt="Ariam Sanchez">
-          <p>Ariam Sanchez</p>
-        </div>
-        <div class="card-integrante">
-          <img src="../img/victor.png" alt="Víctor Merino">
-          <p>Víctor Merino</p>
-        </div>
-        <div class="card-integrante">
-          <img src="../img/paula.png" alt="Paula Moreno">
-          <p>Paula Moreno</p>
-        </div>
-        <div class="card-integrante">
-          <img src="../img/ivan.png" alt="Iván Delgado">
-          <p>Iván Delgado</p>
-        </div>
+    <section>
+      <h2>Ubicación</h2>
+      <p>Visítanos en nuestras oficinas o programa una cita con nuestro equipo:</p>
+      <div class="ratio ratio-16x9 mb-3">
+        <iframe src="https://www.google.com/maps?q=Calle+Innovación+123,+08001+Barcelona&output=embed" allowfullscreen loading="lazy"></iframe>
       </div>
     </section>
   </main>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captación de Alumnos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="icon" href="../img/person-solid.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="text-center">
+    <h1>Captación de Alumnos</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./comedor.html">Comedor</a></li>
+          <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./alumnos.html">Captación</a></li>
+          <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <section>
+      <h2>Situación Actual</h2>
+      <p>El único método actual es la jornada de puertas abiertas presencial anual. No existe presencia digital atractiva y práctica para familias nuevas. Se limita mucho al público potencial (no se puede acceder online). No existe el material audiovisual necesario ni formularios digitales de contacto que faciliten a las familias el proceso de reconocimiento de un centro educativo.</p>
+    </section>
+
+    <section>
+      <h2>Soluciones Propuestas</h2>
+      <h3>1. Web moderna y responsive con sección de "Futuros alumnos"</h3>
+      <p>Diseñar una página web atractiva y adaptada a dispositivos móviles que incluya una sección específica para futuros alumnos, con información detallada sobre la oferta educativa y los valores del centro.</p>
+
+      <h3>2. Visita virtual de las instalaciones</h3>
+      <p>Crear un vídeo interactivo en 360° que permita a las familias explorar las instalaciones del centro desde cualquier lugar (ejemplo similar al funcionamiento de Google Maps entre otros), ofreciendo una experiencia inmersiva y accesible.</p>
+
+      <h3>3. Formularios de preinscripción y solicitud de información</h3>
+      <p>Implementar formularios digitales que permitan a las familias interesadas registrarse fácilmente, solicitar información adicional o iniciar el proceso de preinscripción.</p>
+
+      <h3>4. Creación de campañas en redes sociales y newsletters</h3>
+      <p>Lanzar campañas publicitarias en redes sociales y enviar boletines informativos para aumentar la visibilidad del centro, además de mantener informadas a las familias interesadas.</p>
+    </section>
+
+    <section>
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Aumentar la visibilidad de la escuela durante todo el año.</li>
+        <li>Ofrecer una experiencia de orientación digital a las familias.</li>
+        <li>Automatizar la recogida de datos de familias interesadas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Beneficios Esperados</h2>
+      <ul>
+        <li>Mayor alcance y visibilidad del centro educativo a nivel digital.</li>
+        <li>Facilidad para las familias interesadas en obtener información y realizar preinscripciones.</li>
+        <li>Optimización del proceso de captación de alumnos mediante herramientas digitales.</li>
+        <li>Mejora de la imagen del centro como institución moderna y accesible.</li>
+        <li>Automatización de tareas administrativas, ahorrando tiempo y recursos.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <p>Utiliza este formulario para solicitar información sobre el proceso de admisión o para expresar tu interés en el centro.</p>
+      
+      <form id="formularioCaptacion" action="./preinscripcion.html">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px;"><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;"><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="6" required style="width: 100%; padding: 8px;"></textarea><br><br>
+
+        <button type="submit" style="background-color: #1e4d6b; color: white; padding: 10px 20px; border: none; border-radius: 6px;">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center mt-5">
+    <p>&copy; 2025 Escuela Digital. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
