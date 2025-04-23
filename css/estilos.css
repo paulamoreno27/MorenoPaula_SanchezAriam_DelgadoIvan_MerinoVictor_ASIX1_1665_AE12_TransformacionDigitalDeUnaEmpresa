@@ -37,46 +37,6 @@ body {
   a:hover {
     text-decoration: underline;
   }
-
-  .calendar-table {
-    width: 100%;
-    margin: 30px auto;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .calendar-table th, .calendar-table td {
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ddd; /* Añade el borde a las celdas */
-    vertical-align: top;
-  }
-  
-  .calendar-table th {
-    background-color: #1976d2;
-    color: white;
-    font-size: 1.2rem;
-  }
-  
-  .calendar-table td {
-    background-color: #fafafa;
-    font-size: 1rem;
-  }
-  
-  .calendar-table tr:nth-child(even) td {
-    background-color: #f4f6f8;
-  }
-  
-  .calendar-table tr:hover td {
-    background-color: #e3f2fd;
-  }
-  
-  .calendar-table td {
-    border-radius: 5px;
-  }
-  
   
   section {
     background-color: #ffffff;
@@ -219,3 +179,12 @@ body {
   font-weight: bold;
   margin: 0;
 }
+
+.menu-semanal {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: #90caf9;
+}
+
+

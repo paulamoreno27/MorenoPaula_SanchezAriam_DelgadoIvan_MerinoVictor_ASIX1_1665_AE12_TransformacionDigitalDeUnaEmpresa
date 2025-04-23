@@ -52,10 +52,19 @@
     <section>
       <h2>Ubicación</h2>
       <p>Visítanos en nuestras oficinas o programa una cita con nuestro equipo:</p>
-      <div class="ratio ratio-16x9 mb-3">
-        <iframe src="https://www.google.com/maps?q=Calle+Innovación+123,+08001+Barcelona&output=embed" allowfullscreen loading="lazy"></iframe>
+      <div style="max-width: 600px; height: 300px;">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Mare+de+Déu+de+Bellvitge,+100,+110,+08907+L'Hospitalet+de+Llobregat,+Barcelona&output=embed"
+          width="207%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
+
   </main>
 
   <footer class="text-center mt-5">
