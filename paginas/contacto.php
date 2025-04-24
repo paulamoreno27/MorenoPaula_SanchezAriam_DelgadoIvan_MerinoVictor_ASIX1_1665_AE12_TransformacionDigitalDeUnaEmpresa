@@ -36,7 +36,7 @@
   <main class="container mt-4">    
     <section>
       <h2>Formulario de contacto</h2>
-      <form id="contactForm" method="POST" action="../procesos/validar-contacto.php" onsubmit="return validarFormulario()">
+      <form id="contactForm" method="POST" onsubmit="return redirigirAError()">
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="nombre" name="nombre">
@@ -78,5 +78,13 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function redirigirAError() {
+      // Redirige a error.html después de enviar el formulario
+      window.location.href = 'error.html';
+      return false; // Evita que se envíe el formulario y recargue la página
+    }
+  </script>
 </body>
 </html>
