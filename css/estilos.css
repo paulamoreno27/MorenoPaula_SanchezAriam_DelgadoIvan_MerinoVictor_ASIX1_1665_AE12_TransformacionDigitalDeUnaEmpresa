@@ -194,6 +194,175 @@ form textarea {
   padding: 48px 16px;
 }
 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ESTILOS PÁGINA DE ERROR */
+.error-page {
+  font-family: 'Tuffy', sans-serif;
+  background-color: #f5f7fa;
+  background-image: linear-gradient(to bottom right, #f5f7fa, #e4e8f0);
+  color: #2d3748;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.error-container {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  margin: 20px;
+}
+
+.pulse-animation {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.error-icon {
+  font-size: 72px;
+  margin-bottom: 25px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.error-title {
+  color: #2b6cb0;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.error-message {
+  margin-bottom: 30px;
+}
+
+.error-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #4a5568;
+}
+
+.error-contact {
+  background-color: #ebf8ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.contact-email {
+  color: #2b6cb0;
+  font-weight: 700;
+}
+
+.error-button {
+  display: inline-block;
+  background-color: #4299e1;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
+  margin-top: 20px;
+}
+
+.error-button:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(50, 50, 93, 0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .error-container {
+      padding: 30px;
+  }
+  
+  .error-title {
+      font-size: 28px;
+  }
+  
+  .error-text {
+      font-size: 16px;
+  }
+  
+  .error-icon {
+      font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-container {
+      padding: 25px;
+  }
+  
+  .error-title {
+      font-size: 24px;
+  }
+  
+  .error-text {
+      font-size: 15px;
+  }
+  
+  .error-icon {
+      font-size: 50px;
+  }
+  
+  .error-button {
+      padding: 10px 25px;
+  }
+  
+  .error-contact {
+      font-size: 14px;
+  }
+}
+
+
+.integrante {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.integrante:hover {
+  transform: translateY(-5px);
+}
+
+.integrante img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+
+.card-title {
+  font-family: 'Tuffy', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
 
 @media (max-width: 768px) {
   header h1 {
@@ -228,4 +397,103 @@ form textarea {
     font-size: 15px;
   }
 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+
+@media (max-width: 700px) {
+  body {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .confirm-container,
+  .error-container {
+    padding: 24px;
+    max-width: 90%;
+  }
+
+  .compra-exitosa h2 {
+    font-size: 1.6rem;
+  }
+
+  .compra-exitosa p {
+    font-size: 1rem;
+  }
+
+  .botones-compra a {
+    padding: 0.6rem 1.2rem;
+    font-size: 14px;
+  }
+
+  .error-title {
+    font-size: 24px;
+  }
+
+  .error-text {
+    font-size: 15px;
+  }
+
+  .error-icon {
+    font-size: 50px;
+  }
+
+  .integrante img {
+    height: 300px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+
+  thead {
+      display: none;
+    }
+  
+  tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+  
+  td {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+    }
+  
+  td::before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+      content: attr(data-label);
+    }
 }

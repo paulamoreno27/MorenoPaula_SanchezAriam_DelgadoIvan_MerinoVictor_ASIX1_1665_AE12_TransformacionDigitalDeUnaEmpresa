@@ -8,38 +8,165 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="icon" href="../img/comedor.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
   <header class="text-center">
-    <h1>Gestión del Comedor</h1>
+    <h1>Transformación Digital del Servicio de Comedor</h1>
   </header>
 
- 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="./comedor.html">Comedor</a></li>
-        <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
-        <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
-        <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="./comedor.html">Comedor</a></li>
+          <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
+          <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
+          <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <main class="container mt-4">
+    <div class="accordion mb-5" id="accordionComedor">
+      <!-- Fase 1: Análisis Preliminar -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase1" aria-expanded="false" aria-controls="collapseFase1">
+            <h2>FASE 1: Análisis Preliminar (Diagnóstico)</h2>
+          </button>
+        </h2>
+        <div id="collapseFase1" class="accordion-collapse collapse" aria-labelledby="headingFase1" data-bs-parent="#accordionComedor">
+          <div class="accordion-body">
+            <p>Actualmente, el sistema de gestión del comedor se basa en procesos manuales y el uso de papel.</p>
+            <ul>
+              <li>Las listas se crean y se trasladan físicamente entre la conserjería y la cocina.</li>
+              <li>No existe trazabilidad automática ni sistemas de notificación entre departamentos.</li>
+              <li>Los tiquets físicos pueden perderse o deteriorarse, generando errores y confusión.</li>
+            </ul>
+            <p>Este diagnóstico evidencia la necesidad de implementar una transformación digital para mejorar la eficiencia, trazabilidad y seguridad del servicio de comedor.</p>
+            <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+              <img src="../img/comedofoto.jpg" alt="Imagen izquierda" style="width: 45%; height: 40%;">
+              <img src="../img/comedorfoto2.webp" alt="Imagen derecha" style="width: 45%; height: 40%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fase 2: Propuestas de solución + Objetivos del PTD -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase2" aria-expanded="false" aria-controls="collapseFase2">
+            <h2>FASE 2: Propuestas de solución + Objetivos del PTD</h2>
+          </button>
+        </h2>
+        <div id="collapseFase2" class="accordion-collapse collapse" aria-labelledby="headingFase2" data-bs-parent="#accordionComedor">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table table-bordered text-center align-middle">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Diagnóstico</th>
+                    <th>Propuestas de Soluciones Digitales</th>
+                    <th>Objetivos de PTD (Plan de Transformación Digital)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>El sistema actual es manual y con uso de papel.</td>
+                    <td>Plataforma web/app para comprar tickets online.</td>
+                    <td>Reducir el 100% del uso de papel en ese proceso.</td>
+                  </tr>
+                  <tr>
+                    <td>Las listas se crean y se mueven físicamente entre conserjería y cocina.</td>
+                    <td>Sistema automático de registro de asistencia mediante códigos QR.</td>
+                    <td>Agilizar y digitalizar la comunicación entre conserjería, comedor y cocina.</td>
+                  </tr>
+                  <tr>
+                    <td>No hay trazabilidad automática ni notificaciones.</td>
+                    <td>Tablero digital para Cocina con listado actualizado en tiempo real.</td>
+                    <td>Realizar seguimiento en tiempo real de la participación de los alumnos.</td>
+                  </tr>
+                  <tr>
+                    <td>Los tickets físicos se pueden perder o deteriorar.</td>
+                    <td>Notificaciones por correo para confirmar inscripciones y presencia.</td>
+                    <td>Evitar pérdidas o errores mediante la digitalización de inscripciones y confirmaciones.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fase 3: Preparación de los contenidos del sitio web -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase3" aria-expanded="false" aria-controls="collapseFase3">
+            <h2>FASE 3: Preparación de los contenidos del sitio web</h2>
+          </button>
+        </h2>
+        <div id="collapseFase3" class="accordion-collapse collapse" aria-labelledby="headingFase3" data-bs-parent="#accordionComedor">
+          <div class="accordion-body">
+            <strong>Acciones a implementar</strong>
+            <ul>
+              <li>Crear una sección específica en la web con información sobre el funcionamiento del comedor.</li>
+              <li>Formulario para compra de tiquets online.</li>
+              <li>Apartado con menús semanales y alérgenos.</li>
+              <li>Enlace a la app o plataforma de gestión.</li>
+            </ul>
+
+            <strong>Recursos necesarios</strong>
+            <ul>
+              <li>Plataforma digital (como Dinantia, TokApp o Google Forms con sistema de pago integrado).</li>
+              <li>Diseñador web para integrarlo.</li>
+              <li>Equipo de cocina y secretaría para actualizar menús.</li>
+            </ul>
+
+            <strong>Temporalización</strong>
+            <ul>
+              <li><strong>Preparación</strong> 1 mes</li>
+              <li><strong>Implementación</strong> 2-3 semanas</li>
+            </ul>
+
+            <strong>Responsables</strong>
+            <ul>
+              <li>Coordinador TIC</li>
+              <li>Equipo de comedor</li>
+              <li>Secretaría</li>
+            </ul>
+            
+            <strong>Medidas de seguimiento y evaluación:</strong>
+            <ul>
+              <li>Revisar la disminución del uso de papel en los procesos del comedor (objetivo: uso 100% digital).</li>
+              <li>Monitorear el número de tiquets comprados a través del formulario online en comparación con periodos anteriores.</li>
+              <li>Comprobar la frecuencia de actualización de los menús semanales y la correcta publicación de los alérgenos.</li>
+              <li>Realizar encuestas a las familias para valorar la facilidad de uso y accesibilidad de la plataforma digital.</li>
+              <li>Elaborar un informe trimestral por parte del Coordinador TIC sobre el uso y funcionamiento general del sistema implantado.</li>
+              <li>Celebrar reuniones periódicas con el equipo de comedor y secretaría para revisar incidencias y propuestas de mejora.</li>
+            </ul>            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFase3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase3" aria-expanded="false" aria-controls="collapseFase3">
+          <h2>Ejemplos web</h2>
+        </button>
+      </h2>
+      <div id="collapseFase3" class="accordion-collapse collapse" aria-labelledby="headingFase3" data-bs-parent="#accordionComedor">
+        <div class="accordion-body">
     <section>
       <h2>Funcionamiento del Menú del Comedor</h2>
       <p>El servicio de comedor se gestiona de forma eficiente para asegurar la calidad de la comida y la comodidad de todos los estudiantes. Cada semana se elabora un menú variado que tiene en cuenta las necesidades nutricionales y las posibles alergias alimentarias de los estudiantes.</p>
@@ -49,6 +176,7 @@
     <section>
       <h2>Compra de Tiquets Online</h2>
       <p>Realiza la compra de tus tiquets para el comedor a través de nuestro sistema online. A continuación, puedes seleccionar la cantidad de tiquets que deseas comprar.</p>
+      <p><strong>Precio: </strong>4,99€</p>
       <form action="./compraticket.html" method="POST">
         <div class="mb-3">
           <label for="cantidad" class="form-label">Cantidad de tiquets</label>
@@ -103,14 +231,6 @@
         </table>
       </div>
     </section>
-    
-
-    <section>
-      <h2>Plataforma de Gestión</h2>
-      <p>Para un acceso completo a la gestión del comedor, incluyendo la compra de tiquets, menús y más, accede a nuestra plataforma digital:</p>
-      <p><a href="./error.html" target="_blank">Accede a la plataforma de gestión del comedor</a></p>
-    </section>
-
   </main>
 
   <footer class="text-center mt-5">
@@ -120,3 +240,8 @@
 
 </body>
 </html>
+
+
+
+
+

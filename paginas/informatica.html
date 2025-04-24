@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión informática</title>
+  <title>Gestión Informática</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="icon" href="../img/informatica.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-  <header class="text-center">
-    <h1>Gestión Informática</h1>
+  <header class="text-center py-4">
+    <h1>Transformación Digital de la Gestión Informática</h1>
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,155 +25,189 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="./comedor.html">Comedor</a></li>
-            <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
-            <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
-            <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
-          </ul>
+          <li class="nav-item"><a class="nav-link" href="./comedor.html">Comedor</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./informatica.html">Informática</a></li>
+          <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
+          <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
+        </ul>
       </div>
     </div>
   </nav>
+
   <main class="container mt-4">
-    <section>
-      <h2>Introducción</h2>
-      <p>La transformación digital en los centros educativos exige una gestión eficaz de los recursos tecnológicos. La implementación de un sistema de gestión informática estructurado permite no solo resolver incidencias con mayor agilidad, sino también garantizar el correcto mantenimiento de la infraestructura tecnológica, optimizar recursos, y mejorar la experiencia educativa de docentes y estudiantes.</p>
-  </section>
+    <div class="accordion mb-5" id="accordionInformatica">
+      <!-- FASE 1: DIAGNÓSTICO -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase1" aria-expanded="false" aria-controls="collapseFase1">
+            <h2>FASE 1: Análisis Preliminar (Diagnóstico)</h2>
+          </button>
+        </h2>
+        <div id="collapseFase1" class="accordion-collapse collapse" aria-labelledby="headingFase1" data-bs-parent="#accordionInformatica">
+          <div class="accordion-body">
+            <p>Actualmente, la gestión informática del centro presenta las siguientes limitaciones:</p>
+            <ul>
+              <li>El mantenimiento de equipos se realiza con solicitudes en papel</li>
+              <li>El inventario de maquinaria e incidencias se gestiona en hojas de cálculo no integradas</li>
+              <li>No existe un sistema centralizado de control del estado de los equipos</li>
+              <li>No es posible realizar seguimiento de forma colaborativa ni eficiente</li>
+              <li>Los tickets físicos se pueden perder o deteriorar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FASE 2: SOLUCIONES -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase2" aria-expanded="false" aria-controls="collapseFase2">
+            <h2>FASE 2: Propuestas de solución + Objetivos del PTD</h2>
+          </button>
+        </h2>
+        <div id="collapseFase2" class="accordion-collapse collapse" aria-labelledby="headingFase2" data-bs-parent="#accordionInformatica">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table table-bordered text-center align-middle">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Diagnóstico</th>
+                    <th>Propuestas de Soluciones Digitales</th>
+                    <th>Objetivos del PTD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Solicitudes en papel para mantenimiento</td>
+                    <td>Implementación de sistema de ticketing (GLPI u OTRS)</td>
+                    <td>Centralizar la gestión de incidencias y reducir tiempos de respuesta</td>
+                  </tr>
+                  <tr>
+                    <td>Inventario en hojas de cálculo no integradas</td>
+                    <td>Plataforma online con inventario digital automatizado (QR/RFID)</td>
+                    <td>Mantener un inventario actualizado y accesible en tiempo real</td>
+                  </tr>
+                  <tr>
+                    <td>Falta de sistema centralizado</td>
+                    <td>Panel de control para técnicos con historial de intervenciones</td>
+                    <td>Mejorar la visibilidad y control sobre el estado de los equipos</td>
+                  </tr>
+                  <tr>
+                    <td>Los tickets físicos se pueden perder o deteriorar</td>
+                    <td>Notificaciones por confirmar inscripciones y presencia</td>
+                    <td>Evitar pérdidas o errores mediante la digitalización de inscripciones y confirmaciones</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</section>
+      <!-- FASE 3: PREPARACIÓN DE CONTENIDOS -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase3" aria-expanded="false" aria-controls="collapseFase3">
+            <h2>FASE 3: Preparación de los contenidos del sitio web</h2>
+          </button>
+        </h2>
+        <div id="collapseFase3" class="accordion-collapse collapse" aria-labelledby="headingFase3" data-bs-parent="#accordionInformatica">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Estructura del sitio:</h4>
+                <ul>
+                  <li>Página principal con acceso a todas las áreas</li>
+                  <li>Sección de gestión de tickets</li>
+                  <li>Mapa interactivo de equipos</li>
+                  <li>Documentación técnica</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h4>Contenidos clave:</h4>
+                <ul>
+                  <li>Guías para reportar incidencias</li>
+                  <li>Inventario actualizado</li>
+                  <li>Políticas de uso TIC</li>
+                  <li>Formularios digitales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<section>
-    <h2>Acciones a implementar</h2>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEjemplosWeb">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEjemplosWeb" aria-expanded="false" aria-controls="collapseEjemplosWeb">
+          <h2>Ejemplos web</h2>
+        </button>
+      </h2>
+      <div id="collapseEjemplosWeb" class="accordion-collapse collapse" aria-labelledby="headingEjemplosWeb" data-bs-parent="#accordionComedor">
+        <div class="accordion-body">
+        <section class="mt-5">
+          <h2>Sistema de Tickets</h2>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Reportar nueva incidencia</h5>
+              <form id="ticketForm" action="./error.html">
+                <div class="mb-3">
+                  <label for="ticketTitle" class="form-label">Título de la incidencia*</label>
+                  <input type="text" class="form-control" id="ticketTitle" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="ticketDescription" class="form-label">Descripción detallada*</label>
+                  <textarea class="form-control" id="ticketDescription" rows="3" required></textarea>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="ticketPriority" class="form-label">Prioridad*</label>
+                    <select class="form-select" id="ticketPriority" required>
+                      <option value="" selected disabled>Seleccionar...</option>
+                      <option value="low">Baja</option>
+                      <option value="medium">Media</option>
+                      <option value="high">Alta</option>
+                      <option value="critical">Crítica</option>
+                    </select>
+                  </div>
+                  
+                  <div class="col-md-6 mb-3">
+                    <label for="ticketLocation" class="form-label">Ubicación (opcional)</label>
+                    <input type="text" class="form-control" id="ticketLocation" placeholder="Ej: Aula 203">
+                  </div>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="reset" class="btn btn-outline-secondary me-md-2">Limpiar</button>
+                  <button type="submit" class="btn btn-primary">Enviar ticket</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="alert alert-light mt-3">
+            <small>* Campos obligatorios. Recibirás un correo de confirmación con el número de seguimiento.</small>
+          </div>
+        </section>
 
-    <h3>1. Crear acceso interno para el personal a la plataforma de incidencias</h3>
-    <p>Se desarrollará un sistema centralizado para la gestión de incidencias técnicas accesible desde la red interna del centro. Este acceso permitirá al personal educativo y administrativo:</p>
-    <ul>
-        <li>Registrar fallos o incidencias relacionadas con dispositivos, software o conectividad.</li>
-        <li>Hacer seguimiento del estado de cada solicitud.</li>
-        <li>Recibir notificaciones sobre resoluciones y actualizaciones.</li>
-    </ul>
-    <p>Este sistema garantizará una comunicación fluida entre el usuario final y el equipo técnico, reduciendo los tiempos de respuesta y mejorando la calidad del servicio técnico interno.</p>
-
-    <h3>2. Publicar una guía de uso del sistema de ticketing</h3>
-    <p>Para garantizar una correcta utilización de la plataforma, se elaborará una guía completa que incluirá:</p>
-    <ul>
-        <li>Instrucciones detalladas con capturas de pantalla.</li>
-        <li>Protocolos de actuación según el tipo de incidencia.</li>
-        <li>Recomendaciones para evitar errores comunes.</li>
-        <li>Información sobre tiempos de respuesta estimados y niveles de prioridad.</li>
-    </ul>
-    <p>Además, se organizarán pequeñas sesiones formativas para familiarizar al personal con el sistema, asegurando su correcto uso desde el primer día.</p>
-
-    <h3>3. Publicación de un mapa de equipamientos digitales del centro</h3>
-    <p>Se elaborará un mapa digital interactivo donde se visualizará la ubicación, tipo y estado de cada equipamiento tecnológico del centro, como:</p>
-    <ul>
-        <li>Ordenadores de aula y administrativos.</li>
-        <li>Proyectores, pantallas interactivas y pizarras digitales.</li>
-        <li>Equipos de impresión y escaneado.</li>
-        <li>Puntos de acceso a red y cobertura Wi-Fi.</li>
-    </ul>
-    <p>Este mapa facilitará la planificación del mantenimiento preventivo, la identificación de incidencias recurrentes por zona y el análisis de necesidades futuras en función del uso y antigüedad del equipo.</p>
-</section>
-
-<section>
-    <h2>Recursos necesarios</h2>
-
-    <h3>1. Plataforma de ticketing</h3>
-    <p>Se optará por una plataforma de código abierto como <strong>GLPI</strong> o <strong>Zammad</strong>, por sus prestaciones avanzadas y posibilidades de personalización. Estas herramientas permiten:</p>
-    <ul>
-        <li>Gestión de tickets por categorías y prioridades.</li>
-        <li>Asignación automática a técnicos responsables.</li>
-        <li>Integración con correo electrónico institucional.</li>
-        <li>Generación de informes estadísticos.</li>
-    </ul>
-    <p>Se estudiará también su posible integración con directorios LDAP para facilitar el acceso autenticado del personal.</p>
-
-    <h3>2. Responsable TIC</h3>
-    <p>El Responsable TIC del centro será el encargado de:</p>
-    <ul>
-        <li>Administrar el sistema de ticketing.</li>
-        <li>Coordinar el mantenimiento correctivo y preventivo.</li>
-        <li>Asesorar al profesorado sobre uso adecuado de la infraestructura.</li>
-    </ul>
-    <p>Este perfil debe contar con conocimientos técnicos, habilidades comunicativas y capacidad para documentar procedimientos técnicos de forma clara.</p>
-
-    <h3>3. Documentación explicativa</h3>
-    <p>Además de la guía de uso del sistema de tickets, se generará documentación técnica interna como:</p>
-    <ul>
-        <li>Protocolos de mantenimiento de hardware y software.</li>
-        <li>Plan de contingencia ante fallos masivos.</li>
-        <li>Manuales rápidos para resolución de incidencias comunes.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Temporalización</h2>
-
-    <h3>Fase 1: Preparación (Duración: 2 semanas)</h3>
-    <ul>
-        <li>Análisis del estado actual de la infraestructura.</li>
-        <li>Selección y configuración inicial de la plataforma.</li>
-        <li>Recolección de datos para el mapa de equipamientos.</li>
-        <li>Elaboración de documentación preliminar.</li>
-    </ul>
-
-    <h3>Fase 2: Implementación (Duración: 1 mes)</h3>
-    <ul>
-        <li>Instalación definitiva del sistema de ticketing.</li>
-        <li>Publicación del mapa digital en la intranet del centro.</li>
-        <li>Formación al personal sobre el uso del sistema.</li>
-        <li>Seguimiento y mejora continua del sistema en base a la experiencia inicial.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Responsables</h2>
-
-    <h3>Coordinador TIC</h3>
-    <p>Será el responsable del proyecto. Deberá supervisar cada fase del proceso, coordinar con los responsables de cada área, y asegurar que los objetivos de calidad, tiempos y formación se cumplen adecuadamente.</p>
-
-    <h3>Equipo técnico externo (si fuera necesario)</h3>
-    <p>En función de la complejidad del despliegue o la necesidad de integraciones específicas, se podrá recurrir a un equipo externo con experiencia en implementación de plataformas de soporte técnico y gestión informática en entornos educativos.</p>
-</section>
-
-<section>
-    <h2>Beneficios esperados</h2>
-    <ul>
-        <li>Reducción de tiempos de respuesta ante incidencias tecnológicas.</li>
-        <li>Mayor visibilidad y control sobre el estado del equipamiento TIC del centro.</li>
-        <li>Fomento del uso responsable y ordenado de los recursos digitales.</li>
-        <li>Facilitación de auditorías y planificación presupuestaria para renovación tecnológica.</li>
-        <li>Formación continua y mejora del entorno digital educativo.</li>
-    </ul>
-</section>
-<section>
-  <h2>Formulario de contacto TIC</h2>
-  <p>Utiliza este formulario para notificar una incidencia técnica, hacer sugerencias o solicitar soporte del equipo TIC del centro.</p>
   
-  <form id="formularioTIC" action="./tiquetIT.html">
-    <label for="nombre">Nombre completo:</label><br>
-    <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px;"><br><br>
-
-    <label for="email">Correo electrónico institucional:</label><br>
-    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;"><br><br>
-
-    <label for="tipo">Tipo de solicitud:</label><br>
-    <select id="tipo" name="tipo" required style="width: 100%; padding: 8px;">
-        <option value="incidencia">Incidencia técnica</option>
-        <option value="soporte">Solicitud de soporte</option>
-        <option value="sugerencia">Sugerencia de mejora</option>
-        <option value="peticion">Petición de equipamiento</option>
-    </select><br><br>
-
-    <label for="mensaje">Descripción detallada:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="6" required style="width: 100%; padding: 8px;"></textarea><br><br>
-
-    <button type="submit" style="background-color: #1e4d6b; color: white; padding: 10px 20px; border: none; border-radius: 6px;">Enviar</button>
-  </form>
-</section>
+    <!-- MAPA DE EQUIPOS -->
+    <section class="mt-5 mb-5">
+      <h2>Mapa de Equipamientos</h2>
+      <div class="alert alert-info">
+        <p class="mb-3">Próximamente: Mapa interactivo con la ubicación de todos los equipos tecnológicos del centro.</p>
+        <a href="./error.html" class="btn btn-outline-primary">Ver avance</a>
+      </div>
+    </section>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="text-center mt-5">
-    <p>&copy; 2025 Escuela Digital. Todos los derechos reservados.</p>
+  <footer class="text-center mt-5 py-3">
+    <p class="mb-0">&copy; 2025 Escuela Digital. Todos los derechos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

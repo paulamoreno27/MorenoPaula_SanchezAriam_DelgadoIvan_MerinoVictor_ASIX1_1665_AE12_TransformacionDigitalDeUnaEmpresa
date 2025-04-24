@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Gestió Econòmica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión Económica</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,113 +14,168 @@
 </head>
 <body>
   <header class="text-center">
-    <h1>Gestión Econòmica</h1>
+    <h1>Transformación Digital de la Gestión Económica</h1>
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="./comedor.html">Comedor</a></li>
-            <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
-            <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
-            <li class="nav-item"><a class="nav-link" href="./economica.html">Económica</a></li>
-          </ul>
+          <li class="nav-item"><a class="nav-link" href="./comedor.html">Comedor</a></li>
+          <li class="nav-item"><a class="nav-link" href="./informatica.html">Informática</a></li>
+          <li class="nav-item"><a class="nav-link" href="./alumnos.html">Captación</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./economica.html">Económica</a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
   <main class="container mt-4">
-    <section>
-      <h2>Migración a Plataforma Cloud</h2>
-      <p>Estamos trabajando en la migración del sistema actual de gestión económica a una plataforma en la nube para mejorar el acceso, la seguridad y la eficiencia del sistema.</p>
-      <p>Este proceso se llevará a cabo en las próximas semanas y asegurará una mayor disponibilidad y accesibilidad de los recursos para el personal autorizado.</p>
-    </section>
+    <div class="accordion mb-5" id="accordionEconomica">
 
-    <section>
-      <h2>Acceso Restringido a la Web para el Personal Autorizado</h2>
-      <p>Se creará un acceso restringido en el sitio web solo para el personal autorizado. Este sistema permitirá gestionar la información económica de forma segura.</p>
-      <p>El acceso estará protegido por un sistema de autenticación que garantiza la seguridad y privacidad de los datos.</p>
-    </section>
-
-    <section>
-      <h2>Dudas Frequentes sobre Trámites</h2>
-      <p>Selecciona un tipo de trámite para ver las preguntas frecuentes y sus respuestas:</p>
-
-      <div class="accordion" id="accordionTramites">
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingBeca">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBeca" aria-expanded="true" aria-controls="collapseBeca">
-              Beca
-            </button>
-          </h2>
-          <div id="collapseBeca" class="accordion-collapse collapse" aria-labelledby="headingBeca" data-bs-parent="#accordionTramites">
-            <div class="accordion-body">
-              <strong>¿Cuándo se abre el plazo de solicitud?</strong>
-              <p>El plazo se abre el 1 de septiembre y finaliza el 15 de octubre.</p>
-
-              <strong>¿Qué documentos necesito?</strong>
-              <p>Fotocopia del DNI, justificante de matrícula y declaración de la renta.</p>
-
-              <strong>¿Dónde se entrega la solicitud?</strong>
-              <p>La solicitud se puede entregar presencialmente en secretaría o por correo electrónico.</p>
+      <!-- Fase 1: Análisis Preliminar -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase1" aria-expanded="false" aria-controls="collapseFase1">
+            <h2>FASE 1: Análisis Preliminar (Diagnóstico)</h2>
+          </button>
+        </h2>
+        <div id="collapseFase1" class="accordion-collapse collapse" aria-labelledby="headingFase1" data-bs-parent="#accordionEconomica">
+          <div class="accordion-body">
+            <p>Actualmente, la gestión económica se basa en un software accesible sólo desde el equipo local, lo que limita la colaboración, la seguridad de los datos y el trabajo remoto.</p>
+            <ul>
+              <li>No hay acceso remoto por parte de otros departamentos como dirección o secretaría.</li>
+              <li>No existen copias de seguridad externas ni integraciones con sistemas digitales de validación.</li>
+              <li>Trámites aún se realizan en papel y requieren validación manual.</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+              <img src="../img/economiafoto.jpg" alt="Imagen izquierda" style="width: 45%;">
+              <img src="../img/economiafoto2.jpg" alt="Imagen derecha" style="width: 45%;">
             </div>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingCuota">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuota" aria-expanded="false" aria-controls="collapseCuota">
-              Cuota
-            </button>
-          </h2>
-          <div id="collapseCuota" class="accordion-collapse collapse" aria-labelledby="headingCuota" data-bs-parent="#accordionTramites">
-            <div class="accordion-body">
-              <strong>¿Cuáles son las formas de pago disponibles?</strong>
-              <p>Transferencia bancaria, tarjeta de crédito o domiciliación.</p>
-
-              <strong>¿Puedo fraccionar el pago?</strong>
-              <p>Sí, puedes fraccionarlo hasta en 3 pagos sin intereses.</p>
-
-              <strong>¿Qué pasa si me atraso en un pago?</strong>
-              <p>Se aplicará un recargo del 5% después de 10 días de vencimiento.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOtros">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOtros" aria-expanded="false" aria-controls="collapseOtros">
-              Otros Trámites
-            </button>
-          </h2>
-          <div id="collapseOtros" class="accordion-collapse collapse" aria-labelledby="headingOtros" data-bs-parent="#accordionTramites">
-            <div class="accordion-body">
-              <strong>¿Cómo solicito un certificado de estudios?</strong>
-              <p>Envía un correo a administración con tu nombre completo y curso actual.</p>
-
-              <strong>¿Dónde puedo actualizar mis datos personales?</strong>
-              <p>A través del portal de alumnos o directamente en secretaría.</p>
-
-              <strong>¿Puedo hacer trámites en nombre de otra persona?</strong>
-              <p>Sí, siempre que presentes una autorización firmada y copia del DNI de ambas personas.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <section>
-      <h2>Recursos Necessarios</h2>
-      <p>Para implementar la migración a la plataforma cloud, será necesario el uso de un sistema de gestión económica en línea como Sage o Contasol Cloud, así como la implementación de un sistema de validación de identidad (usuario y contraseña o SSO).</p>
-      <p>La colaboración con la administración también será clave para garantizar la correcta implementación de estos sistemas.</p>
-    </section>
+
+      <!-- Fase 2: Propuestas de solución + Objetivos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase2" aria-expanded="false" aria-controls="collapseFase2">
+            <h2>FASE 2: Propuestas de solución + Objetivos del PTD</h2>
+          </button>
+        </h2>
+        <div id="collapseFase2" class="accordion-collapse collapse" aria-labelledby="headingFase2" data-bs-parent="#accordionEconomica">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table table-bordered text-center align-middle">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Diagnóstico</th>
+                    <th>Propuestas de Soluciones Digitales</th>
+                    <th>Objetivos del PTD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>El software actual sólo es accesible desde el ordenador local del administrador.</td>
+                    <td>Acceso remoto con perfiles para diferentes roles (secretaría, dirección).</td>
+                    <td>Garantizar el acceso remoto y colaborativo junto con la disponibilidad de los datos.</td>
+                  </tr>
+                  <tr>
+                    <td>No hay copias de seguridad en la nube y la colaboración en tiempo real es limitada.</td>
+                    <td>Migración del software económico a una plataforma cloud segura con copias automáticas.</td>
+                    <td>Reducir el riesgo de pérdida de datos y asegurar un respaldo externo.</td>
+                  </tr>
+                  <tr>
+                    <td>Falta integración con otros departamentos (como comedor o secretaría).</td>
+                    <td>Integración de datos entre departamentos mediante herramientas compartidas.</td>
+                    <td>Mejorar la eficiencia y coordinación entre áreas.</td>
+                  </tr>
+                  <tr>
+                    <td>Los trámites económicos son manuales y en papel.</td>
+                    <td>Digitalización de formularios y solicitudes económicas con firma digital.</td>
+                    <td>Automatizar procesos para reducir errores y agilizar la gestión.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fase 3: Contenidos y Recursos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFase3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase3" aria-expanded="false" aria-controls="collapseFase3">
+            <h2>FASE 3: Implementación y Recursos</h2>
+          </button>
+        </h2>
+        <div id="collapseFase3" class="accordion-collapse collapse" aria-labelledby="headingFase3" data-bs-parent="#accordionEconomica">
+          <div class="accordion-body">
+            <strong>Acciones a implementar:</strong>
+            <ul>
+              <li>Habilitar una zona privada en la web con acceso restringido para roles específicos.</li>
+              <li>Formularios digitales para trámites económicos como solicitud de becas, pagos de cuotas o certificados.</li>
+              <li>Migrar los datos económicos a un entorno cloud con acceso remoto.</li>
+            </ul>
+
+            <strong>Recursos necesarios:</strong>
+            <ul>
+              <li>Software cloud como Sage Cloud o Contasol Cloud.</li>
+              <li>Sistema de validación de identidad con cuentas institucionales (Google/Microsoft).</li>
+              <li>Equipo técnico y administrativo para la migración y pruebas del sistema.</li>
+            </ul>
+
+            <strong>Temporalización:</strong>
+            <ul>
+              <li><strong>Preparación:</strong> 3 semanas</li>
+              <li><strong>Implementación:</strong> 1 mes</li>
+            </ul>
+
+            <strong>Responsables:</strong>
+            <ul>
+              <li>Coordinador TIC</li>
+              <li>Equipo de administración</li>
+              <li>Dirección</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEjemplosWeb">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEjemplosWeb" aria-expanded="false" aria-controls="collapseEjemplosWeb">
+            <h2>Ejemplos web</h2>
+          </button>
+        </h2>
+        <div id="collapseEjemplosWeb" class="accordion-collapse collapse" aria-labelledby="headingEjemplosWeb" data-bs-parent="#accordionComedor">
+          <div class="accordion-body">
+          <section class="mt-5">
+                <h2>Acceso al Sistema Económico</h2>
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="usuario" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </form>
+      
+                <div id="mensaje" class="mt-4"></div>
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="text-center mt-5">
