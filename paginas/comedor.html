@@ -159,78 +159,84 @@
       </div>
     </div>
     
+
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingFase3">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFase3" aria-expanded="false" aria-controls="collapseFase3">
+      <h2 class="accordion-header" id="headingFaseComedor">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaseComedor" aria-expanded="false" aria-controls="collapseFaseComedor">
           <h2>Ejemplos web</h2>
         </button>
       </h2>
-      <div id="collapseFase3" class="accordion-collapse collapse" aria-labelledby="headingFase3" data-bs-parent="#accordionComedor">
+      <div id="collapseFaseComedor" class="accordion-collapse collapse" aria-labelledby="headingFaseComedor" data-bs-parent="#accordionComedor">
         <div class="accordion-body">
-    <section>
-      <h2>Funcionamiento del Menú del Comedor</h2>
-      <p>El servicio de comedor se gestiona de forma eficiente para asegurar la calidad de la comida y la comodidad de todos los estudiantes. Cada semana se elabora un menú variado que tiene en cuenta las necesidades nutricionales y las posibles alergias alimentarias de los estudiantes.</p>
-      <p>El equipo de cocina actualiza el menú semanalmente y se asegura de que todas las necesidades especiales sean atendidas. Para cualquier consulta relacionada con alergias o dietas especiales, por favor, contacte con el equipo del comedor.</p>
-    </section>
-
-    <section>
-      <h2>Compra de Tiquets Online</h2>
-      <p>Realiza la compra de tus tiquets para el comedor a través de nuestro sistema online. A continuación, puedes seleccionar la cantidad de tiquets que deseas comprar.</p>
-      <p><strong>Precio: </strong>4,99€</p>
-      <form action="./compraticket.html" method="POST">
-        <div class="mb-3">
-          <label for="cantidad" class="form-label">Cantidad de tiquets</label>
-          <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" max="10" required>
+          <section>
+            <h2>Funcionamiento del Menú del Comedor</h2>
+            <p>El servicio de comedor se gestiona de forma eficiente para asegurar la calidad de la comida y la comodidad de todos los estudiantes. Cada semana se elabora un menú variado que tiene en cuenta las necesidades nutricionales y las posibles alergias alimentarias de los estudiantes.</p>
+            <p>El equipo de cocina actualiza el menú semanalmente y se asegura de que todas las necesidades especiales sean atendidas. Para cualquier consulta relacionada con alergias o dietas especiales, por favor, contacte con el equipo del comedor.</p>
+          </section>
+      
+          <section>
+            <h2>Compra de Tiquets Online</h2>
+            <p>Realiza la compra de tus tiquets para el comedor a través de nuestro sistema online. A continuación, puedes seleccionar la cantidad de tiquets que deseas comprar.</p>
+            <p><strong>Precio: </strong>4,99€</p>
+            <form action="./compraticket.html" method="POST">
+              <div class="mb-3">
+                <label for="cantidad" class="form-label">Cantidad de tiquets</label>
+                <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" max="10" required>
+              </div>
+              <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Comprar tiquet</button>
+            </form>
+          </section>
+      
+          <section class="menu-semanal mb-5">
+            <h2>Menú Semanal y Alergénicos</h2>
+            <p>A continuación, puedes consultar los menús semanales. Cada menú incluye información sobre posibles alérgenos para garantizar la seguridad de los estudiantes con necesidades alimentarias especiales.</p>
+            <div class="table-responsive">
+              <table class="table table-bordered text-center align-middle">
+                <thead class="table">
+                  <tr>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miércoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>Menú:</strong> Ensalada, Pollo a la plancha, Arroz<br>
+                      <strong>Alergénicos:</strong> Gluten, Lactosa
+                    </td>
+                    <td>
+                      <strong>Menú:</strong> Espaguetis, Albóndigas, Verduras<br>
+                      <strong>Alergénicos:</strong> Gluten
+                    </td>
+                    <td>
+                      <strong>Menú:</strong> Sopa de verduras, Pescado al horno, Puré de patatas<br>
+                      <strong>Alergénicos:</strong> Pescado, Gluten
+                    </td>
+                    <td>
+                      <strong>Menú:</strong> Pollo asado, Ensalada mixta, Pan<br>
+                      <strong>Alergénicos:</strong> Gluten
+                    </td>
+                    <td>
+                      <strong>Menú:</strong> Pizza vegetariana, Ensalada César<br>
+                      <strong>Alergénicos:</strong> Gluten, Lactosa
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
         </div>
-        <div class="mb-3">
-          <label for="fecha" class="form-label">Fecha</label>
-          <input type="date" class="form-control" id="fecha" name="fecha" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Comprar tiquet</button>
-      </form>
-    </section>
-
-    <section class="menu-semanal mb-5">
-      <h2>Menú Semanal y Alergénicos</h2>
-      <p>A continuación, puedes consultar los menús semanales. Cada menú incluye información sobre posibles alérgenos para garantizar la seguridad de los estudiantes con necesidades alimentarias especiales.</p>
-      <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle">
-          <thead class="table">
-            <tr>
-              <th scope="col">Lunes</th>
-              <th scope="col">Martes</th>
-              <th scope="col">Miércoles</th>
-              <th scope="col">Jueves</th>
-              <th scope="col">Viernes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <strong>Menú:</strong> Ensalada, Pollo a la plancha, Arroz<br>
-                <strong>Alergénicos:</strong> Gluten, Lactosa
-              </td>
-              <td>
-                <strong>Menú:</strong> Espaguetis, Albóndigas, Verduras<br>
-                <strong>Alergénicos:</strong> Gluten
-              </td>
-              <td>
-                <strong>Menú:</strong> Sopa de verduras, Pescado al horno, Puré de patatas<br>
-                <strong>Alergénicos:</strong> Pescado, Gluten
-              </td>
-              <td>
-                <strong>Menú:</strong> Pollo asado, Ensalada mixta, Pan<br>
-                <strong>Alergénicos:</strong> Gluten
-              </td>
-              <td>
-                <strong>Menú:</strong> Pizza vegetariana, Ensalada César<br>
-                <strong>Alergénicos:</strong> Gluten, Lactosa
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
-    </section>
+    </div>
+
+    
   </main>
 
   <footer class="text-center mt-5">
